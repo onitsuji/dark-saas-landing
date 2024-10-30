@@ -20,11 +20,15 @@ export const Hero = () => {
         <h1 className="text-7xl font-bold tracking-tighter text-center mt-8">
           One Task at a Time
         </h1>
-        <p className="text-center ">
+        <p className="text-center text-xl mt-8">
           Celebrate your accomplishments with an app designed to track, motivate
           and celebrate success.
         </p>
-        <button>Get for free</button>
+        <div className="flex justify-center mt-8">
+          <button className="bg-white text-black py-2 px-5 rounded-lg font-medium">
+            Get for free
+          </button>
+        </div>
       </div>
     </div>
   );
