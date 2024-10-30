@@ -18,13 +18,16 @@ export const Hero = () => {
             </span>
           </a>
         </div>
-        <h1 className="text-7xl font-bold tracking-tighter text-center mt-8">
-          One Task at a Time
-        </h1>
-        <p className="text-center text-xl mt-8">
-          Celebrate your accomplishments with an app designed to track, motivate
-          and celebrate success.
-        </p>
+        <div className="flex items-center flex-col">
+          <h1 className="text-7xl font-bold tracking-tighter text-center mt-8 inline-flex sm:text-9xl">
+            One Task <br className="lg:hidden" />
+            at a Time
+          </h1>
+          <p className="text-center text-xl mt-8 max-w-md">
+            Celebrate your accomplishments with an app designed to track,
+            motivate and celebrate success.
+          </p>
+        </div>
         <div className="flex justify-center mt-8">
           <button className="bg-white text-black py-2 px-5 rounded-lg font-medium">
             Get for free
