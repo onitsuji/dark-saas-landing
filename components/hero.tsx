@@ -24,7 +24,7 @@ export const Hero = () => {
         <div className="flex justify-center">
           <div className="inline-flex relative">
             <h1 className="text-7xl font-bold tracking-tighter text-center mt-8 inline-flex sm:text-9xl">
-              One Task <br className="lg:hidden" />
+              One Task <br />
               at a Time
             </h1>
             <Image
@@ -32,7 +32,7 @@ export const Hero = () => {
               alt="cursor icon"
               height={200}
               width={200}
-              className="hidden absolute left-[490px] top-[58px] sm:flex lg:left-[1065px] lg:top-[40px]"
+              className="hidden absolute left-[490px] top-[58px] sm:flex"
             />
             <Image
               src={messageImg}
