@@ -28,20 +28,21 @@ export const Features = () => {
         <p className="text-center mt-5 text-xl text-white/70">
           Set tasks, get reminders and see your teams progress rise quickly.
         </p>
-      </div>
-      <div className="mt-16 flex flex-col gap-6">
-        {features.map((feature) => (
-          <div
-            key={feature.title}
-            className="border border-white/30 px-5 py-10 text-center"
-          >
-            <div className="flex justify-center">
-              <EcoSystemIcon />
+
+        <div className="mt-16 flex flex-col gap-4">
+          {features.map((feature) => (
+            <div
+              key={feature.title}
+              className="border border-white/30 px-5 py-10 text-center rounded-xl"
+            >
+              <div className="inline-flex size-14 bg-white text-black items-center justify-center rounded-lg">
+                <EcoSystemIcon />
+              </div>
+              <h3 className="mt-6 font-bold">{feature.title}</h3>
+              <p className="mt-2 text-white/70">{feature.description}</p>
             </div>
-            <h3>{feature.title}</h3>
-            <p>{feature.description}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
