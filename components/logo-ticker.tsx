@@ -1,9 +1,12 @@
+"use client";
+
 import acmeLogo from "@/assets/images/acme.png";
 import quantumLogo from "@/assets/images/quantum.png";
 import echoLogo from "@/assets/images/echo.png";
 import celestialLogo from "@/assets/images/celestial.png";
 import pulseLogo from "@/assets/images/pulse.png";
 import apexLogo from "@/assets/images/apex.png";
+import Image from "next/image";
 
 const images = [
   { src: acmeLogo, alt: "Acme Logo" },
@@ -19,6 +22,11 @@ export const LogoTicker = () => {
     <div className="bg-black text-white">
       <div className="container">
         <h2>Trusted by world class teams</h2>
+        <div>
+          {images.map((img) => (
+            <Image src={img.src} alt={img.alt} width={200} height={200} />
+          ))}
+        </div>
       </div>
     </div>
   );
