@@ -17,5 +17,22 @@ const features = [
 ];
 
 export const Features = () => {
-  return null;
+  return (
+    <div className="bg-black text-white">
+      <div className="container">
+        <h2>Everything you need</h2>
+        <p>
+          Set tasks, get reminders and see your teams progress rise quickly.
+        </p>
+      </div>
+      <div>
+        {features.map((feature) => (
+          <div>
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
