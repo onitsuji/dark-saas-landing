@@ -19,13 +19,21 @@ const images = [
 
 export const LogoTicker = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white py-[72px]">
       <div className="container">
-        <h2>Trusted by world class teams</h2>
-        <div>
-          {images.map((img) => (
-            <Image src={img.src} alt={img.alt} width={200} height={200} />
-          ))}
+        <h2 className="text-center text-xl text-white/70">
+          Trusted by world class teams
+        </h2>
+        <div className="overflow-hidden mt-9">
+          <div className="flex gap-16">
+            {images.map((img) => (
+              <Image
+                src={img.src}
+                alt={img.alt}
+                className="flex-none h-8 w-auto"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
