@@ -1,9 +1,9 @@
-import acmeLogo from "../assets/images/acme.png";
-import quantumLogo from "../assets/images/quantum.png";
-import echoLogo from "../assets/images/echo.png";
-import celestialLogo from "../assets/images/celestial.png";
-import pulseLogo from "../assets/images/pulse.png";
-import apexLogo from "../assets/images/apex.png";
+import acmeLogo from "@/assets/images/acme.png";
+import quantumLogo from "@/assets/images/quantum.png";
+import echoLogo from "@/assets/images/echo.png";
+import celestialLogo from "@/assets/images/celestial.png";
+import pulseLogo from "@/assets/images/pulse.png";
+import apexLogo from "@/assets/images/apex.png";
 
 const images = [
   { src: acmeLogo, alt: "Acme Logo" },
@@ -15,5 +15,11 @@ const images = [
 ];
 
 export const LogoTicker = () => {
-  return null;
+  return (
+    <div className="bg-black text-white">
+      <div className="container">
+        <h2>Trusted by world class teams</h2>
+      </div>
+    </div>
+  );
 };
