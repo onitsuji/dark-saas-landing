@@ -20,16 +20,16 @@ const features = [
 
 export const Features = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white py-[72px] sm:py-24">
       <div className="container">
-        <h2 className="text-center font-bold text-5xl tracking-tighter">
+        <h2 className="text-center font-bold text-5xl tracking-tighter sm:text-6xl">
           Everything you need
         </h2>
         <p className="text-center mt-5 text-xl text-white/70">
           Set tasks, get reminders and see your teams progress rise quickly.
         </p>
 
-        <div className="mt-16 flex flex-col gap-4">
+        <div className="mt-16 flex flex-col gap-4 sm:flex-row">
           {features.map((feature) => (
             <div
               key={feature.title}
